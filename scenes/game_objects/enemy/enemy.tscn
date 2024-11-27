@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgfg8si2saoct"]
+
+[ext_resource type="Script" path="res://scenes/game_objects/enemy/enemy.gd" id="1_sklys"]
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_sklys")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
