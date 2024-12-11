@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccine2jpv8x07"]
+
+[ext_resource type="Texture2D" uid="uid://duwqpda04347s" path="res://assets/levels/start/start_outside.png" id="1_4ev1u"]
+
+[node name="StartOutside" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4ev1u")
+centered = false
+
+[node name="StartLevelBalconyEnter" type="Node2D" parent="."]
+position = Vector2(1383, 341)

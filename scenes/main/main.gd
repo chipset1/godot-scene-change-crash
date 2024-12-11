@@ -35,6 +35,7 @@ func _main_change_level(level_path : String):
 	_goto_level(l)
 
 func _set_player_start_position(level_name):
+	assert(_current_level.has_node(level_name+"Enter"))
 	var player_start_position_node = _current_level.get_node(level_name+"Enter");
 	if(player_start_position_node != null):
 		player.transform.origin = player_start_position_node.transform.origin

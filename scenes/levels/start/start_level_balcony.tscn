@@ -15,3 +15,7 @@ position = Vector2(1202, 454)
 [node name="Door" parent="." instance=ExtResource("2_tk3fc")]
 position = Vector2(662, -267)
 level_name = "start/start_level"
+
+[node name="Door2" parent="." instance=ExtResource("2_tk3fc")]
+position = Vector2(80, 47)
+level_name = "start/start_outside"
