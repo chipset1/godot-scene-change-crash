@@ -18,3 +18,5 @@ position = Vector2(938, 1012)
 
 [node name="StartLevelEnter" type="Node2D" parent="."]
 position = Vector2(1201, 908)
+
+[node name="StaticCamera" type="Node" parent="."]
