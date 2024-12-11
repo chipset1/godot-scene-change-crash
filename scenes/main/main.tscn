@@ -2,11 +2,18 @@
 
 [ext_resource type="PackedScene" uid="uid://byiahdcb4nmky" path="res://scenes/game_objects/player/player.tscn" id="1_doqbh"]
 [ext_resource type="Script" path="res://scenes/main/main.gd" id="1_vxdi8"]
-[ext_resource type="PackedScene" uid="uid://bsffhoav6ebwg" path="res://scenes/managers/enemy_manager.tscn" id="3_54nfu"]
+[ext_resource type="PackedScene" uid="uid://jey0ilj4cv46" path="res://scenes/levels/start/start_level.tscn" id="3_cn1h2"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_vxdi8")
 
+[node name="Levels" type="Node2D" parent="."]
+
+[node name="StartLevel" parent="Levels" instance=ExtResource("3_cn1h2")]
+
 [node name="Player" parent="." instance=ExtResource("1_doqbh")]
 
-[node name="EnemyManager" parent="." instance=ExtResource("3_54nfu")]
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[editable path="Player"]

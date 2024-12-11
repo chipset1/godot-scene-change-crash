@@ -15,4 +15,4 @@ shape = SubResource("RectangleShape2D_3e8ub")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_65pgv")
 
-[node name="Node" type="Node" parent="."]
+[node name="RemoteCameraTransform" type="RemoteTransform2D" parent="."]

@@ -1,10 +1,14 @@
 extends CharacterBody2D
 
-
 @export var speed = 300.0
 const JUMP_VELOCITY = -400.0
+@onready var remote_camera_transform : RemoteTransform2D = $RemoteCameraTransform
 
-
+func disable_camera_follow() -> void:
+	remote_camera_transform.update_position = false
+	
+func enable_camera_follow() -> void:
+	remote_camera_transform.update_position = true
 
 func _physics_process(_delta: float) -> void:
 	# Handle jump.
