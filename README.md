@@ -14,6 +14,7 @@ Godot v4.3.stable - Windows 10.0.22631 - Vulkan (Forward+) - dedicated NVIDIA Ge
 When run with a debug build found here
 https://github.com/Calinou/godot-debug-builds I get the error
 
+```
 CrashHandlerException: Program crashed
 Engine version: Godot Engine v4.3.stable.custom_build (77dcf97d82cbfe4e4615475fa52ca03da645dbd8)
 Dumping the backtrace. Please include this when reporting the bug to the project developer.
@@ -30,7 +31,8 @@ Dumping the backtrace. Please include this when reporting the bug to the project
 [10] <couldn't map PC to fn name>
 [11] <couldn't map PC to fn name>
 -- END OF BACKTRACE --
-
+```
+j
 same as the issue here
 https://github.com/godotengine/godot/issues/94112
 
@@ -40,8 +42,9 @@ scons platform=windows use_mingw=yes target=editor dev_build=yes debug_symbols=y
 
 and I didn't get an backtrace and the game crashes after you rerun the game and
 change scene a few times in this build.
-
+```
 ================================================================
 CrashHandlerException: Program crashed with signal 11
 Engine version: Godot Engine v4.4.dev.custom_build (dc5f1b7a2826962f02230227abc486ac160ae66c)
 Dumping the backtrace. Please include this when reporting the bug to the project developer.
+```
