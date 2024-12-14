@@ -3,7 +3,9 @@
 Changing scenes crashes the game only on the second time the game is run.
 
 To recreate the crash goto the door and press j. Close and reload the game and
-goto the door and press j and the game should crash. If it doesn't crash rerun the game and do it again it. Some times it take a few time and on the lastest build it takes many restarts for it to crash.
+goto the door and press j and the game should crash. If it doesn't crash rerun
+the game and do it again it. Some times it take a few times and on the latest
+build it takes many restarts for it to crash.
 
 Windows 11 but system info sayes 10 for some reason.
 
@@ -35,7 +37,6 @@ https://github.com/godotengine/godot/issues/94112
 I compiled godot with mingw64 with these parameters.
 
 scons platform=windows use_mingw=yes target=editor dev_build=yes debug_symbols=yes
-
 
 and I didn't get an backtrace and the game crashes after you rerun the game and
 change scene a few times in this build.
