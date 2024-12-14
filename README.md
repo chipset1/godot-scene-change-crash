@@ -33,7 +33,7 @@ Dumping the backtrace. Please include this when reporting the bug to the project
 -- END OF BACKTRACE --
 ```
 
-same as the issue here
+a simalar issue here
 https://github.com/godotengine/godot/issues/94112
 
 I compiled godot with mingw64 with these parameters.
