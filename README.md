@@ -32,7 +32,7 @@ Dumping the backtrace. Please include this when reporting the bug to the project
 [11] <couldn't map PC to fn name>
 -- END OF BACKTRACE --
 ```
-j
+
 same as the issue here
 https://github.com/godotengine/godot/issues/94112
 
