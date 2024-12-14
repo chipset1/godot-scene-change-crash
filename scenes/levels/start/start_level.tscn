@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://jey0ilj4cv46"]
 
 [ext_resource type="Texture2D" uid="uid://wrtp4darriv5" path="res://assets/levels/start/start_room.png" id="1_i6k15"]
-[ext_resource type="PackedScene" uid="uid://dy5gh5chbcqcf" path="res://scenes/game_objects/Door/door.tscn" id="2_lpish"]
+[ext_resource type="PackedScene" uid="uid://dy5gh5chbcqcf" path="res://scenes/game_objects/door/door.tscn" id="2_lpish"]
 
 [node name="StartLevel" type="Node2D"]
 
@@ -10,7 +10,7 @@ texture = ExtResource("1_i6k15")
 centered = false
 
 [node name="Door" parent="." instance=ExtResource("2_lpish")]
-position = Vector2(388, 520)
+position = Vector2(393, 386)
 level_name = "start/start_level_balcony"
 
 [node name="StartLevelBalconyEnter" type="Node2D" parent="."]

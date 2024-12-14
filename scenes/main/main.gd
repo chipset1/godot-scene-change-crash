@@ -31,8 +31,19 @@ func _set_camera_top_left():
 	_camera.set_anchor_mode(Camera2D.ANCHOR_MODE_FIXED_TOP_LEFT)
 
 func _main_change_level(level_path : String):
-	var l = "res://scenes/levels/" + level_path + ".tscn"
-	_goto_level(l)
+	var path = "res://scenes/levels/" + level_path + ".tscn"
+		# It is now safe to remove the current scene.
+	var previous_name = _current_level.name
+	_current_level.free()
+	# Load the new scene.
+	var l = load(path)
+	# Instance the new scene.
+	_current_level = l.instantiate()
+	_set_player_start_position(previous_name)
+	_should_update_camera()
+	# Add it to the active scene, as child of root.
+	$Levels.add_child(_current_level)
+
 
 func _set_player_start_position(level_name):
 	assert(_current_level.has_node(level_name+"Enter"))
@@ -49,16 +60,3 @@ func _should_update_camera():
 	else:
 		_set_camera_center()
 		player.enable_camera_follow()
-
-func _goto_level(path):
-	# It is now safe to remove the current scene.
-	var previous_name = _current_level.name
-	_current_level.free()
-	# Load the new scene.
-	var l = ResourceLoader.load(path)
-	# Instance the new scene.
-	_current_level = l.instantiate()
-	_set_player_start_position(previous_name)
-	_should_update_camera()
-	# Add it to the active scene, as child of root.
-	$Levels.add_child(_current_level)
