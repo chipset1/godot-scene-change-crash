@@ -4,7 +4,7 @@ Changing scenes crashes the game only on the second time the game is run.
 
 To recreate the crash goto the door and press j. Close and reload the game and
 goto the door and press j and the game should crash. If it doesn't crash rerun
-the game and do it again it. Some times it take a few times and on the latest
+the game and do it again it. Some times it take a few restarts and on the latest
 build it takes many restarts for it to crash.
 
 Windows 11 but system info sayes 10 for some reason.
