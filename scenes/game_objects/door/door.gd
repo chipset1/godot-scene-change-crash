@@ -14,6 +14,6 @@ func _body_entered(_body):
 func _body_exited(_body):
 	_has_body_entered = false
 
-func _process(_delta: float) -> void:
-	if _has_body_entered and Input.is_action_just_pressed("interact"):
+func _unhandled_input(event: InputEvent) -> void:
+	if _has_body_entered and event.is_action_pressed("interact"):
 		SignalBus.change_level.emit(level_name)
