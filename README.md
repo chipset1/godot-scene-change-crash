@@ -1,4 +1,17 @@
+#Crash was cause by on using 	call_deferred()
+
+I was just freeing the code and it crashed and forgot about the documentation saying to use 
+call_deferred. 
+
+Change the scene changing code to 	
+_deferred_goto_scene.call_deferred(path)
+
+See the documentation about it here
+https://docs.godotengine.org/en/stable/tutorials/scripting/singletons_autoload.html#custom-scene-switcher
+
 # Godot bug reproduction project
+
+
 
 Changing scenes crashes the game only on the second time the game is run.
 
