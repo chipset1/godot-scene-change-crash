@@ -1,4 +1,4 @@
-#Crash was cause by on using 	call_deferred()
+# Crash was cause by on forgeting to use call_deferred()
 
 I was just freeing the code and it crashed and forgot about the documentation saying to use 
 call_deferred. 
