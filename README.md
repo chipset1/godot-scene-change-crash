@@ -1,5 +1,7 @@
 # Crash was cause by on forgeting to use call_deferred()
 
+I'm going to keep this project here for anyone who sees my godot issue.
+
 I was just freeing the code and it crashed and forgot about the documentation saying to use 
 call_deferred. 
 
